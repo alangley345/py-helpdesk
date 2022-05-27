@@ -1,5 +1,5 @@
 from django.contrib import admin
-from .models import Category, Agent, Ticket, Status
+from .models import Category, Agent, Ticket
 
 #customizing administration site itself
 admin.site.site_header = "Py-Helpdesk"

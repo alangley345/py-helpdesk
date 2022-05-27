@@ -1,6 +1,3 @@
-from pickletools import int4
-from tokenize import Name
-import uuid
 from django.db import models
 from django.forms import CharField
 from django.urls import reverse
