@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Py-Helpdesk</title>
+    </head>
+    
+    <body>
+        <div>
+            {% block sidebar %}
+            <ul>
+                <li><a href="{% url 'index' %}">Home</a></li>
+                <li><a>Stats</a></li>
+            </ul>
+            
+            {% endblock %}
+        </div>
+
+    <div>
+        <p>You have the following open tickets:</p>
+        <ul>
+            {{ num_instances }}
+        </ul>
+    </div>
+        </div>
+    
+        <div>
+            <p>You have the following open tickets:</p>
+            <ul>
+                {{ num_instances }}
+            </ul>
+        </div>
+    </body>
+    
+</html>
