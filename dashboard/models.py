@@ -71,10 +71,10 @@ class Ticket(models.Model):
 
     display_status.short_description = 'Status'
 
-    #def display_agent(self):
-    #   return ', '.join(agent.agent for agent in self.agent.all()[:3]))
+    def display_agent(self):
+       return ', '.join(agent.agent for agent in self.agent.all()[:3])
 
-    #display_status.short_description = 'Agent'
+    display_status.short_description = 'Agent'
 
     
 
